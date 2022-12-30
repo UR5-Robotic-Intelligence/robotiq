@@ -186,7 +186,7 @@ int main(int argc, char *argv[]) {
 
   // set user-specified prefix
   std::string gripper_prefix;
-  pnh.param<std::string>("prefix", gripper_prefix, "");
+  pnh.param<std::string>("prefix", gripper_prefix, "grip_");
 
   // Create Robotiq3
   Robotiq3 robotiq(gripper_prefix);
